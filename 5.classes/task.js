@@ -99,7 +99,7 @@ class Library {
   }
 
   findBookBy(type, value) {
-    let result = this.books.find(
+    const result = this.books.find(
       (book) => book.hasOwnProperty(type) && book[type] === value
     );
     return result || null;
